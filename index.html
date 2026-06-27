@@ -10,27 +10,40 @@
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
-  <div class="logo-container">
-    <img src="http://127.0.0.1:5502/paksons-enterprises/images/ChatGPT%20Image%20Nov%2017,%202025,%2007_54_22%20PM.png" 
-         alt="Paksons Enterprises Logo" 
-         class="logo-image">
-  </div>
 
-  <nav id="main-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#knowledge-tab">Knowledge Tab</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="index.html" class="logo-link">
+            <img
+                src="http://127.0.0.1:5502/paksons-enterprises/images/ChatGPT%20Image%20Nov%2017,%202025,%2007_54_22%20PM.png"
+                alt="Paksons Enterprises Ltd Logo"
+                class="logo-image"
+            >
+        </a>
+    </div>
 
-  <!-- Hamburger moved to the far right -->
-  <button class="menu-toggle" aria-label="Toggle menu">
-    <span></span>
-  </button>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#knowledge-tab">Knowledge Tab</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button
+        class="menu-toggle"
+        aria-label="Toggle Navigation"
+        aria-expanded="false"
+        aria-controls="main-nav"
+    >
+    </button>
+
 </header>
 
 
