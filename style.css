@@ -67,20 +67,44 @@ nav a:focus {
   color: yellow;
 }
 
-/* Logo Container */
+/* ================= LOGO ================= */
 .logo-container {
-  display: flex;
-  align-items: center;
-  height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 10px;
 }
 
-/* Logo Image */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .logo-image {
-  height: 180px;        
-  width: auto;         
-  object-fit: contain; 
+    width: auto;
+    height: 70px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
+.logo-image:hover {
+    transform: scale(1.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        height: 70px;
+    }
+
+    .logo-image {
+        height: 55px;
+    }
+}
 
 .menu-toggle {
   display: none;
